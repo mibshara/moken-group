@@ -12,7 +12,6 @@ body {
     padding: 0;
 }
 
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -27,9 +26,10 @@ button:focus {
 body {
     overflow-x: hidden;
     margin: 0;
+}
+.home {
     background: linear-gradient(#261546, #0b021d) no-repeat;
 }
-
 
 input,
 button {
@@ -236,7 +236,6 @@ h6 {
 .block-mail a {
     letter-spacing: 3.2px;
 }
-
 
 .block-top {
     min-height: 100vh;
@@ -513,9 +512,6 @@ h6 {
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
 }
-
-
-
 .header-text {
     max-width: 800px;
     margin: 9% auto 60px;
@@ -659,7 +655,6 @@ h6 {
         transform: translateX(0%);
     }   
 }
-
 .s-section {
     position: relative;
     padding: 90px 0;
@@ -700,7 +695,6 @@ h6 {
 .r2 {
     padding-left: 230px;
 }
-
 .section-items {
     padding: 120px 200px 100px;  
     display: flex;
@@ -755,7 +749,6 @@ h6 {
     left: 0;
     top: 0;
 }
-
 .s-solutions .section-item-fon {
     font-size: 310px;
     left: -78px;
@@ -793,7 +786,6 @@ h6 {
     padding: 0 200px 100px; 
     align-items: flex-end;
 }
-
 .s-contact {
     padding: 20px 0 40px; 
 }
@@ -1104,7 +1096,7 @@ h6 {
         margin-top: 30px;
     }
     .contact-wrap p {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     .s-talent .section-items,
     .s-market .section-items,

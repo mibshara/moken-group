@@ -1,0 +1,128 @@
+.body {
+    --button-line: #1d1035;
+}
+.about {
+    background-color: #fff;
+    color: #1d1035;
+}
+.logo-text {
+    color: #1d1035;
+    font-weight: 700;
+}
+.section-title:before,
+.nmu-list ul a::before,
+.scrolling-right::before {
+    background-color: #1d1035;
+}
+.about .header-text {
+    max-width: 894px;
+}
+a,
+.section-item-fon {
+    color: #231342;
+}
+.hamburger {
+    border: 1px solid #1d1035;
+}
+.about .s-team,
+.about .s-approach {
+    padding: 90px 0 180px;
+}
+.about .section-item p {
+    font-weight: 300;
+}
+.s-approach .section-item p {
+    padding-right: 30px;
+}
+.about .section-title {
+    font-weight: 700;
+}
+.about .item-btn a {
+    font-weight: 700;
+    pointer-events: auto;
+}
+.about .item-btn {
+    margin-top: 30px;
+}
+.section-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-about-sect .section-items {
+    padding: 0 30px 10px 200px;
+}
+.s-about-sect:nth-of-type(2n+1) .section-items {
+    flex-direction: row-reverse;  
+    padding: 0 175px 10px 30px;
+}
+.s-about-sect:nth-of-type(2n+1) .section-item {
+    padding-left: 30px;
+}
+.s-approach .section-item-fon {
+    font-size: 327.2px;
+    left: -41px;
+    top: 13px;
+}
+.s-team .section-item-fon {
+    font-size: 580.4px;
+    left: -89px;
+    top: -63px;
+}
+
+.s-contact {
+    margin-top: 70px;
+    padding: 95px 0 40px;
+    background-image: radial-gradient(circle at 100% 0, #261546, #0b021d);
+}
+.about .s-contact .section-title {
+    color: #fff;
+}
+.about .s-contact .section-title:before {
+    background-color: #fff;
+}
+.about .s-contact .contact-wrap p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .header-title {
+        font-size: 26px;
+    }
+}
+@media (max-width: 768px) {
+    .about .section-items {
+        flex-direction: column-reverse !important;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 50px 25px 0 !important;
+    }
+    .about .s-about .section-items {
+        flex-direction: column !important;
+    }
+    .about .item-title {
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .about .s-section {
+        padding: 30px 0 0;
+    }
+    .about .section-items img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .s-about-sect:nth-of-type(2n+1) .section-item {
+        padding-left: 0;
+    }
+    .about .item-btn a {
+        display: block;
+    }
+    .about .s-contact {
+        margin-top: 85px;
+        padding: 95px 0 40px;
+    }
+}
