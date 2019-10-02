@@ -12,6 +12,7 @@ body {
     padding: 0;
 }
 
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -30,6 +31,7 @@ body {
 .home {
     background: linear-gradient(#261546, #0b021d) no-repeat;
 }
+
 
 input,
 button {
@@ -251,7 +253,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
+    padding: 25px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -259,8 +261,19 @@ h6 {
     z-index: 2;
     transition: all 0.5s;
 }
-.top-line-scroll {
-    transform: translateY(-100%);
+.top-line-white {
+    background-color: #fff;
+}
+.top-line-white .logo-text {
+    color: #1d1035;
+    font-weight: 700;
+}
+.top-line-white .hamburger {
+    border: 1px solid #1d1035;
+}
+.top-line-white .hamburger__line-in::before, 
+.top-line-white .hamburger__line-in::after {
+    background-color: #1d1035;
 }
 .logo-text {
     display: inline-block;
@@ -512,6 +525,7 @@ h6 {
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
 }
+
 .header-text {
     max-width: 800px;
     margin: 9% auto 60px;
@@ -655,6 +669,7 @@ h6 {
         transform: translateX(0%);
     }   
 }
+
 .s-section {
     position: relative;
     padding: 90px 0;
@@ -695,6 +710,7 @@ h6 {
 .r2 {
     padding-left: 230px;
 }
+
 .section-items {
     padding: 120px 200px 100px;  
     display: flex;
@@ -786,6 +802,7 @@ h6 {
     padding: 0 200px 100px; 
     align-items: flex-end;
 }
+
 .s-contact {
     padding: 20px 0 40px; 
 }
@@ -793,10 +810,17 @@ h6 {
     position: relative;
     padding: 75px 0 40px;
 }
+.s-contact .section-title {
+    color: #fff;
+}
+.s-contact .section-title::before {
+    background-color: #fff;
+}
 .contact-wrap p {
     font-size: 30px;
     text-align: center; 
     line-height: 1.5;
+    color: #fff;
 }
 .scroll-right-contact {
     display: flex !important;
@@ -813,8 +837,6 @@ h6 {
     margin: 0 55px;
     position: relative;
 }
-
-
 .text-circle {
     position: absolute;
     top: 0;
@@ -920,14 +942,12 @@ h6 {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-    }
-
-    
+    }    
     .logo-text {
         font-size: 18px;
     }
     .top-line {
-        padding: 25px;
+        padding: 10px 25px;
     }
     .hamburger {
         transform: scale(0.65)
@@ -1087,6 +1107,8 @@ h6 {
         letter-spacing: -5.7px;
         position: relative;
         line-height: 1;
+        left: -62px;
+        margin-top: -45px;
     }
     .item-btn a {
         display: none;
