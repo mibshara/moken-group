@@ -89,7 +89,8 @@ a {
     padding: 0 105px 0 200px;
 }
 .s-growing-team .section-item {
-    min-width: 491px;
+    min-width: 478px;
+    max-width: 448px;
 }
 .s-growing-team .item-title {
     max-width: 410px;
