@@ -48,6 +48,7 @@ a {
     max-width: 643px;
     font-size: 14px;    
     line-height: 1.5;
+    font-weight: 300;
 }
 .line-bottom {
     position: absolute;
@@ -76,7 +77,6 @@ a {
     transform: scale(1.1);
 }
 
-/* s-growing-team */
 .s-growing-team {
     background-color: #f5f5f5;
 }
@@ -96,8 +96,8 @@ a {
     line-height: 1.1;
 }
 .s-growing-team p {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     letter-spacing: -0.5px;
     margin-bottom: 30px;
 }

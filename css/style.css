@@ -161,6 +161,7 @@ h6 {
     --section-title: 30px;
 }
 
+/* menu */
 .block-mnu {
     background-color: #fff;
     width: 60%;
@@ -526,8 +527,10 @@ h6 {
     transition-duration: 0s;
 }
 
+
+
 .header-text {
-    max-width: 800px;
+    max-width: 840px;
     margin: 9% auto 60px;
 
 }
@@ -765,6 +768,7 @@ h6 {
     left: 0;
     top: 0;
 }
+
 .s-solutions .section-item-fon {
     font-size: 310px;
     left: -78px;
@@ -837,6 +841,7 @@ h6 {
     margin: 0 55px;
     position: relative;
 }
+
 .text-circle {
     position: absolute;
     top: 0;
@@ -897,6 +902,7 @@ h6 {
     color: rgba(255, 255, 255, 0.35);
     text-align: center;
 }
+
 
 @media (max-width : 1200px) {
     .team-item-photo {
@@ -1110,9 +1116,12 @@ h6 {
         left: -62px;
         margin-top: -45px;
     }
-    .item-btn a {
+    .item-btn a { 
         display: none;
         font-size: 14px;
+    }
+    #about .item-btn a {
+        display: block;
     }
     .item-btn {
         margin-top: 30px;
