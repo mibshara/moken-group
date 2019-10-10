@@ -527,8 +527,6 @@ h6 {
     transition-duration: 0s;
 }
 
-
-
 .header-text {
     max-width: 840px;
     margin: 9% auto 60px;
@@ -538,15 +536,15 @@ h6 {
 .header-title {
     font-size: 90px;
     font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -2px;
+    line-height: 1.06;
+    letter-spacing: -6.75px;
 }
 .header-text p {
     font-size: 20px;
     font-weight: 300;
     letter-spacing: -0.3px;
     line-height: 1.4;
-    max-width: 694px;
+    max-width: 692px;
     margin: 40px 0 0;
 }
 .scrolling-block {
@@ -732,6 +730,7 @@ h6 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 40px;
+    line-height: 1;
     letter-spacing: -3.75px;
 }
 .section-item p {
