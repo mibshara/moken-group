@@ -161,7 +161,6 @@ h6 {
     --section-title: 30px;
 }
 
-/* menu */
 .block-mnu {
     background-color: #fff;
     width: 60%;
@@ -527,6 +526,8 @@ h6 {
     transition-duration: 0s;
 }
 
+
+
 .header-text {
     max-width: 840px;
     margin: 9% auto 60px;
@@ -729,8 +730,8 @@ h6 {
 .item-title {
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 40px;
     line-height: 1;
+    margin-bottom: 40px;
     letter-spacing: -3.75px;
 }
 .section-item p {
@@ -840,6 +841,7 @@ h6 {
     margin: 0 55px;
     position: relative;
 }
+
 
 .text-circle {
     position: absolute;
@@ -1090,7 +1092,7 @@ h6 {
         grid-row-gap: 40px;
     }
     .item-title {
-        font-size: 20px;
+        font-size: 20px !important;
         font-weight: 600;
         margin-bottom: 25px;
         letter-spacing: -1.5px;

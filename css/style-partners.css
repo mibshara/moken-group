@@ -142,13 +142,18 @@ a {
     width: 100%;
     text-align: right;
     position: relative;
-    margin: 100px 0 0;
+    margin: -5px 0 0;
 }
 .growing-img-wrap {
-    max-width: 727px;
+    max-width: 664px;
     position: relative;
-    padding-top: 20px;
     margin: 0 0 0 auto;
+}
+.s-build .item-btn {
+    margin-top: 30px;
+}
+.s-build .item-btn a {
+    pointer-events: auto;;
 }
 
 .growing-img-wrap span::before,
@@ -170,41 +175,43 @@ a {
     animation: scaleAnimation 4.5s linear infinite;
 }
 .growing-img-wrap span:nth-of-type(1)::before {
-    top: 19%;
-    left: 5%;
+    top: 10%;
+    left: 7%;
 }
 .growing-img-wrap span:nth-of-type(1)::after {
-    top: 21%;
-    left: 20%;
+    top: 13%;
+    left: 17%;
     animation-duration: 6s;
 }
 .growing-img-wrap span:nth-of-type(2)::before {
     top: 16%;
-    left: 41%;
+    left: 21%;
     animation-duration: 5.5s;
 }
 .growing-img-wrap span:nth-of-type(2)::after {
-    top: 22%;
+    top: 6%;
     left: 45%;
     animation-duration: 4s;
 }
 .growing-img-wrap span:nth-of-type(3)::before {
-    top: 38%;
+    top: 15%;
     left: 49%;
     animation-duration: 6.5s;
 }
 .growing-img-wrap span:nth-of-type(3)::after {
-    bottom: 63%;
-    right: 13%;
+    bottom: 48%;
+    right: 40%;
     animation-duration: 5.8s;
 }
 .growing-img-wrap span:nth-of-type(4)::before {
-    bottom: 11%;
-    right: 5%;
+    top: 17%;
+    right: 12%;
     animation-duration: 4.9s;
 }
 .growing-img-wrap span:nth-of-type(4)::after {
-    display: none;
+    bottom: 13%;
+    right: 3%;
+    animation-duration: 5.2s;
 }
 
 @-webkit-keyframes scaleAnimation {
@@ -296,12 +303,31 @@ a {
 @media (max-width: 768px) {
     .partners-items {
         display: block;
-        padding: 0 25px;
+        padding: 45px 25px 0;
     }
     .partners-item {
         padding: 20px;
-        max-width: 350px;
+        height: 150px;
+        max-width: 260px;
         margin: 0 auto 30px;
+    }
+    .partners-item p {
+        font-size: 7px;
+        line-height: 1.57;
+    }
+    .partners-item-logo svg, .partners-item-logo img {
+        height: 100%;
+        width: auto;
+        max-width: 107px;
+    }
+    .s-partners {
+        padding: 75px 0 0px;
+    }
+    .logo-binary {
+        height: auto !important;
+    }
+    .section-item p {
+        font-size: 12px;
     }
     .clients-items {
         grid-template-rows: repeat(4, 1fr);
@@ -314,11 +340,37 @@ a {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px 40px;
     }
+    .partners-item-logo {
+        min-height: 20%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .s-build .item-btn a {
+        display: block;
+    }
+    .map-wrap {
+        margin: 40px 0 25px;
+    }
     
 }
 @media (max-width: 480px) {
+    .clients-items {
+        margin: 35px 0 0;
+    }
     .clients-items, .ecran-slide {
-        display: block;
+        grid-gap: 20px 20px;
+    }
+    .clients-item-logo {
+        min-height: 65px;
+    }
+    .clients-item {
+        height: 67px;
+    }
+    .owl-dots {
+        top: 5px;
+    }
+    .item-title {
+        line-height: 1.4;
     }
 }
 
