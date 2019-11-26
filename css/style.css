@@ -12,7 +12,6 @@ body {
     padding: 0;
 }
 
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -158,28 +157,24 @@ h6 {
 
 .body {
     --button-line: #fff;
+    --mnu-line: #231342;
     --section-title: 30px;
 }
 
 .block-mnu {
-    background-color: #fff;
-    width: 60%;
+    width: 1100px;
     top: 0;
     right: 0;
     position: fixed;
-    padding: 25px 25px 10px;
+    padding: 20px 25px 10px;
     z-index: 3;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
-    -webkit-box-shadow: -4px 2px 63px 6px rgba(0,0,0,0.62);
-    -moz-box-shadow: -4px 2px 63px 6px rgba(0,0,0,0.62);
-    box-shadow: -4px 2px 63px 6px rgba(0,0,0,0.62);
-}
-.mnu-hidden {
-    right: -100%;
 }
 
+
 .mnu-closed {
+    display: none;
     position: absolute;
     font-size: 40px;
     color: #1f103c;
@@ -202,20 +197,68 @@ h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 170px;
 }
 .menu a {
-    display: inline-block;
+    display: inline-block;    
     color: #231442;
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 20px;
+    padding: 10px 5px;
     font-weight: 700;
+    position: relative;
+    overflow: hidden;
+}
+.home .menu a {
+   color: #fff; 
 }
 .menu a span {
 	display: inline-block;
 }
+
+
+.mnu__line-in {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.mnu__line-in::before {
+    width: 200%;
+    height: 2px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: var(--mnu-line);
+    left: calc(100% - 335%);
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+.home .mnu__line-in::before {
+    background-color: #fff;
+}
+
+.menu a:hover .mnu__line-in::before {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
 .mnu-social {
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -261,12 +304,15 @@ h6 {
     z-index: 2;
     transition: all 0.5s;
 }
-.top-line-white {
+.top-line-white .top-line {
     background-color: #fff;
 }
 .top-line-white .logo-text {
     color: #1d1035;
     font-weight: 700;
+}
+.top-line-white .mnu__line-in::before {
+    background-color: var(--mnu-line);
 }
 .top-line-white .hamburger {
     border: 1px solid #1d1035;
@@ -275,6 +321,9 @@ h6 {
 .top-line-white .hamburger__line-in::after {
     background-color: #1d1035;
 }
+.top-line-white .menu a {
+    color: #231442;
+}
 .logo-text {
     display: inline-block;
     font-size: 25px;
@@ -282,7 +331,7 @@ h6 {
     font-weight: 600;
 }
 .hamburger-block {
-    display: block;
+    display: none;
     position: relative;
     right: 0;
     -webkit-transition: all 1s;
@@ -909,6 +958,9 @@ h6 {
     .team-item-photo {
         max-width: 620px;
     }
+    .block-mnu {
+        width: 945px;
+    }
 }
 @media (max-width : 991px) {
 
@@ -917,6 +969,30 @@ h6 {
         --button-line: #fff;
         --section-title: 18px;
     
+    }
+    .mnu-hidden {
+        right: -100%;
+    }
+    .hamburger-block,
+    .mnu-closed {
+        display: block;
+    }
+    .block-mnu {
+        background-color: #fff;
+        -webkit-box-shadow: -4px 2px 63px 6px rgba(0,0,0,0.62);
+        -moz-box-shadow: -4px 2px 63px 6px rgba(0,0,0,0.62);
+        box-shadow: -4px 2px 63px 6px rgba(0,0,0,0.62);
+    }
+    .mnu-social {
+        display: flex;
+    }
+    .menu a,
+    .top-line-white .menu a {
+        color: #231442;
+    }
+    .menu a:hover .mnu__line-in::before {
+        -webkit-transform: none;
+        transform: none;
     }
     .block-mnu {
         width: 90%;
