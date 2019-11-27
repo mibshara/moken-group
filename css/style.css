@@ -857,11 +857,10 @@ h6 {
 }
 
 .s-contact {
-    padding: 20px 0 40px; 
+    padding: 20px 40px 40px 80px;
 }
 .contact-wrap {
-    position: relative;
-    padding: 75px 0 40px;
+    padding: 43px 1vw 40px 9vw;
 }
 .s-contact .section-title {
     color: #fff;
@@ -869,25 +868,107 @@ h6 {
 .s-contact .section-title::before {
     background-color: #fff;
 }
-.contact-wrap p {
-    font-size: 30px;
-    text-align: center; 
-    line-height: 1.5;
+.logo-footer {
+    width: 160px;
+    font-size: 36px;
+    line-height: 1;    
+    font-weight: 700;
+    padding-left: 10px;
+}
+.logo-footer a {
     color: #fff;
 }
-.scroll-right-contact {
+.logo-footer span {
+    font-size: 16.8px;
+    letter-spacing: -0.42px;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.logo-footer span:nth-of-type(1) {
+    left: -10px;
+    top: 7px;
+}
+.logo-footer span:nth-of-type(2) {
+    right: -10px;
+    top: -7px;
+    text-align: right;
+}
+.contact-content-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact-wrap p,
+.contact-wrap a {
+    font-size: 20px;
+    color: #fff;
+}
+.contact-wrap p {    
+    line-height: 1.5;
+    font-weight: 300;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+.foot-head a {
+    line-height: 2.5;
+    letter-spacing: -1.05px;
+    font-weight: 700;
+    position: relative;
+}
+.foot-head a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+    margin: 220px 0 40px;
+}
+.foot-mnu-item-title {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.foot-mnu-item ul {
+    margin: 0;
+    padding: 0;
+}
+.foot-mnu-item ul li {
+    margin: 4px 0;
+    text-align: left;
+}
+.foot-mnu-item ul a {
+    font-size: 12px;
+    padding: 5px 0;
+    font-weight: 200;
+    width: 100%;
+    display: inline-block;
+}
+.anim-contact {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.anim-contact a  {
     display: flex !important;
     justify-content: center;
     align-items: center;
 }
-.scroll-right-contact .liner {
+.anim-contact a .liner {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
-    padding: 0 55px;
-    margin: 0 55px;
+    width: 418px;
+    height: 418px;
     position: relative;
 }
 
@@ -896,10 +977,11 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 120px;
-    height: 120px;
-    background-image: url(../img/send_message.png);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/send_message_big.png);
     background-position: center;
+    background-size: cover;
     -webkit-animation: graphAnimation 9.25s linear infinite;
     -moz-animation: graphAnimation 9.25s linear infinite;
     -ms-animation: graphAnimation 9.25s linear infinite;
@@ -908,13 +990,8 @@ h6 {
 }
 .svg-wrap {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    height: 50%;
     z-index: 1;
 }
 @keyframes scaleAnim {
@@ -945,21 +1022,42 @@ h6 {
 }
 .svg-wrap svg {
     animation: scaleAnim 3s linear infinite;
+    width: 100%;
+    height: 100%;
 }
 .copy {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
+    line-height: 1.5;
     color: rgba(255, 255, 255, 0.35);
-    text-align: center;
 }
 
 
+@media (max-width : 1440px) {
+    .anim-contact a .liner {
+        width: 32vw;
+        height: 32vw;
+    }
+}
+@media (max-width : 1280px) {
+    .anim-contact a .liner {
+        width: 28vw;
+        height: 28vw;
+    }
+}
 @media (max-width : 1200px) {
     .team-item-photo {
         max-width: 620px;
     }
     .block-mnu {
         width: 945px;
+    }
+    .anim-contact a .liner {
+        width: 20vw;
+        height: 20vw;
+    }
+    .anim-contact {
+        top: 100px;
     }
 }
 @media (max-width : 991px) {
@@ -968,7 +1066,7 @@ h6 {
     
         --button-line: #fff;
         --section-title: 18px;
-    
+        
     }
     .mnu-hidden {
         right: -100%;
@@ -988,7 +1086,7 @@ h6 {
     }
     .menu a,
     .top-line-white .menu a {
-        color: #231442;
+        color: #231442 !important;
     }
     .menu a:hover .mnu__line-in::before {
         -webkit-transform: none;
@@ -1113,7 +1211,7 @@ h6 {
         min-height: auto;
     }
     .s-section {
-        padding: 75px 0 0;
+        padding: 75px 25px 0;
     }
     .section-title {
         padding-left: 86px;
@@ -1158,6 +1256,61 @@ h6 {
     }
     .team-item:nth-child(2n) {
         margin: 135px 0 10px;
+    }
+    .logo-footer {
+        font-size: 18px;
+        width: 88px;
+        padding-left: 5px;
+    }
+    .logo-footer span {
+        font-size: 8.2px;
+        letter-spacing: -0.21px;
+    }
+    .logo-footer span:nth-of-type(1) {
+        left: -6px;
+        top: 4px;
+    }
+    .logo-footer span:nth-of-type(2) {
+        right: 2px;
+        top: -3px;
+    }
+    .contact-content-wrap,
+    .footer-menu {
+        flex-direction: column;
+    }
+    .contact-wrap {
+        padding: 36px 0 0;
+    }
+    .foot-head a {
+        letter-spacing: -0.53px;
+        font-size: 13px;
+    }
+    .contact-wrap p {
+        margin-bottom: 0;
+        padding-right: 0;
+    }
+    .foot-mnu-item-title {
+        font-size: 11px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    .foot-mnu-item ul a {
+        font-size: 10px;
+        padding: 0px 0;
+        font-weight: 200;
+    }
+    .foot-mnu-item {
+        margin-bottom: 20px;
+    }
+    .footer-menu {
+        margin: 115px 0 25px;
+    }
+    .anim-contact a .liner {
+        width: 155px;
+        height: 155px;
+    }
+    .anim-contact {
+        top: 150px;
     }
     
 }
@@ -1213,14 +1366,12 @@ h6 {
     }
     
     .s-contact {
-        padding: 75px 0 15px;
+        padding: 75px 25px 15px;
     }
     .scroll-right-contact {
         flex-direction: column-reverse;
     }
-    .contact-wrap {
-        padding: 90px 0 30px;
-    }
+    
     .scroll-right-contact .liner {
         margin: 0 55px 30px;
     }

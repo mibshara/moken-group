@@ -22,7 +22,7 @@ a {
 }
 
 .s-contact {
-    padding: 95px 0 40px;
+    padding: 95px 40px 40px;
     background-image: radial-gradient(circle at 100% 0, #261546, #0b021d);
 }
 
@@ -238,6 +238,9 @@ a {
     .growing-img-wrap span:nth-of-type(4)::before {
         bottom: 10%;
         right: 0%;
+    }
+    .s-contact {
+        padding: 27px 25px 40px !important;
     }
 }
 @media (max-width: 768px) {

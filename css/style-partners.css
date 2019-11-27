@@ -23,7 +23,7 @@ a {
 }
 
 .s-contact {
-    padding: 95px 0 40px;
+    padding: 95px 40px 40px;
     background-image: radial-gradient(circle at 100% 0, #261546, #0b021d);
 }
 
@@ -297,6 +297,9 @@ a {
     }
     .owl-dots {
         top: 0px;
+    }
+    .s-contact {
+        padding: 27px 25px 40px !important;
     }
     
 }

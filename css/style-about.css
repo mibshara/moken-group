@@ -80,21 +80,10 @@ a,
 
 .s-contact {
     margin-top: 70px;
-    padding: 95px 0 40px;
+    padding: 95px 40px 40px;
     background-image: radial-gradient(circle at 100% 0, #261546, #0b021d);
 }
-.about .s-contact .section-title {
-    color: #fff;
-}
-.about .s-contact .section-title:before {
-    background-color: #fff;
-}
-.about .s-contact .contact-wrap p {
-    font-size: 30px;
-    text-align: center;
-    line-height: 1.5;
-    color: #fff;
-}
+
 .about-img-block {
     width: 510px;
     height: 340px;
@@ -151,6 +140,9 @@ a,
         width: 510px;
         margin-top: 100px;
     }
+    .s-contact {
+        padding: 27px 25px 40px !important;
+    }
 }
 @media (max-width: 768px) {
         
@@ -173,7 +165,6 @@ a,
     }
     .about .s-contact {
         margin-top: 85px;
-        padding: 95px 0 40px;
     }
     .about-img-block {
         width: 100%;
