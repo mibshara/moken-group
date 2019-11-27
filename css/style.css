@@ -951,7 +951,6 @@ h6 {
     font-weight: 200;
     width: 100%;
     display: inline-block;
-    transition: all 0.4s;
 }
 .foot-mnu-item ul a:hover {
     font-weight: 400;
