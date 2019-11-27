@@ -951,6 +951,10 @@ h6 {
     font-weight: 200;
     width: 100%;
     display: inline-block;
+    transition: all 0.4s;
+}
+.foot-mnu-item ul a:hover {
+    font-weight: 400;
 }
 .anim-contact {
     position: absolute;
@@ -979,14 +983,14 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/send_message_big_2.png);
+    background-image: url(../img/collaborate.png);
     background-position: center;
     background-size: cover;
-    -webkit-animation: graphAnimation 9.25s linear infinite;
-    -moz-animation: graphAnimation 9.25s linear infinite;
-    -ms-animation: graphAnimation 9.25s linear infinite;
-    -o-animation: graphAnimation 9.25s linear infinite;
-    animation: graphAnimation 9.25s linear infinite;
+    -webkit-animation: graphAnimation 12.25s linear infinite;
+    -moz-animation: graphAnimation 12.25s linear infinite;
+    -ms-animation: graphAnimation 12.25s linear infinite;
+    -o-animation: graphAnimation 12.25s linear infinite;
+    animation: graphAnimation 12.25s linear infinite;
 }
 .svg-wrap {
     position: absolute;
