@@ -249,6 +249,7 @@ h6 {
     background-color: #fff;
 }
 
+.positions-head-title:hover .mnu__line-in::before,
 .menu a:hover .mnu__line-in::before {
     -webkit-transform: translateX(200%);
     transform: translateX(200%);
@@ -951,6 +952,7 @@ h6 {
     font-weight: 200;
     width: 100%;
     display: inline-block;
+    transition: all 0.4s;
 }
 .foot-mnu-item ul a:hover {
     font-weight: 400;
