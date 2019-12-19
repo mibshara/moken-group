@@ -1,22 +1,7 @@
 /*jshint esversion: 6 */
 $(document).ready(function () {
 
-	if ($("body").hasClass("home")) {
-    var controllerMenu = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-      triggerElement: ".scroll-trigger",
-      triggerHook: '0.1'
-    })
-    .setClassToggle('.block-top', 'top-line-white')
-    .addTo(controllerMenu);  
-  }
-  eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('d $6=$(\'c, g\');$(\'.h-i a[4*="#"], .7 a[4*="#"]\').3(1(e){e.9();$6.b({f:$($.n(p,\'4\')).j().q},o)});$(".k-2").3(1(){$(".2-0").l("0-5")});$(".0-m").3(1(){$(".2-0").8("0-5")});$(".7 a").3(1(){$(".2-0").8("0-5")});',27,27,'mnu|function|block|click|href|hidden|page|menu|addClass|preventDefault||animate|html|var||scrollTop|body|nmu|list|offset|hamburger|removeClass|closed|attr|400|this|top'.split('|'),0,{}))
-
-  $(".scroll-left").each(function(){var controller1=new ScrollMagic.Controller();var textAnimation_1=new TimelineMax().fromTo(this,1,{x:"0%"},{x:"250%",ease:Linear.easeNone})
-  new ScrollMagic.Scene({triggerElement:this,triggerHook:0.5,duration:"200%"}).setTween(textAnimation_1).addTo(controller1)});$(".scroll-right").each(function(){var controller2=new ScrollMagic.Controller();var textAnimation_2=new TimelineMax().fromTo(this,1,{x:"0%"},{x:"-200%",ease:Linear.easeNone})
-  new ScrollMagic.Scene({triggerElement:this,triggerHook:0.5,duration:"200%"}).setTween(textAnimation_2).addTo(controller2)});
-  
-  eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(".5-3-2").a(9(){$(".5-3-2").7("1");$(8).6("1");$(".e-d").6("4");f 0=$(8).c("b-0");$("."+0).7("4")});',16,16,'id|active|title|head|hidden|positions|addClass|removeClass|this|function|click|data|attr|content|ps|let'.split('|'),0,{}))
+  eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('g($("m").u("r")){Y O=T J.1B();T J.1C({1s:".s-12",13:\'0.1\'}).14(\'.f-q\',\'q-1i-1y\').1h(O);$(\'.r-7\').k({j:4});$(\'.r-7-G\').k({w:\'.r-7\',E:C,j:4,z:4,A:4})}g($("m").u("1e")){$(\'.b-7\').k({j:4});$(\'.7-G\').k({w:\'.b-7\',E:C,j:4,z:4,A:4})}g($("m").u("1j")){$(\'.1m-N N\').1k();W d=0;$(\'.1d-n, .n-1b\').i(8(e){g(d==0){$(".I-2").9("5");d++}L g(d==1){$(".I-3").9("5");d++;$(6).h("5");$(".n-16-1c 17").9("5")}L g(d==2){e.S();$(".f-I").h("5");$(".f-18").9("5")}1n.1o(d)})}g($("m").u("1A")){$(\'.v-H-7\').k({j:4});$(\'.v-H-7-G\').k({w:\'.v-H-7\',E:C,j:4,z:4,A:4})}$(".1t-1u").1x(8(t){l=$(6).l(),$(6).P("Q K").p("x",-(t.1v-l.1G)/$(6).1p()*M+15),$(6).P("Q K").p("y",-(t.1f-l.q)/$(6).1D()*M)});$(\'.10-D-n 11\').19(8(){$(\'.10-D-n 11\').9(\'o o-1w\');$(6).h(\'o\')});Y $R=$(\'1q, m\');$(\'.1r-D a[F*="#"], .Z a[F*="#"]\').i(8(e){e.S();$R.1z({1F:$($.p(6,\'F\')).l().q},1H)});$(".1I-f").i(8(){$(".f-c").9("c-5")});$(".c-1E").i(8(){$(".f-c").h("c-5")});$(".Z a").i(8(){$(".f-c").h("c-5")});$(".U-V-X").i(8(){$(".U-V-X").9("o");$(6).h("o");$(".1a-1l").h("5");W B=$(6).p("1g-B");$("."+B).9("5")});',62,107,'||||false|hidden|this|carousel|function|removeClass|||mnu|allStep||block|if|addClass|click|prevNextButtons|flickity|offset|body|form|active|attr|top|home|||hasClass|get|asNavFor|||draggable|pageDots|id|true|list|contain|href|nav|latest|step|ScrollMagic|pattern|else|30|select|controllerMenu|find|svg|page|preventDefault|new|positions|head|let|title|var|menu|wait|input|about|triggerHook|setClassToggle||btn|button|success|mouseover|ps|submit|wrap|next|partners|pageY|data|addTo|line|contact|niceSelect|content|custom|console|log|width|html|nmu|triggerElement|item|word|pageX|one|mousemove|white|animate|elevate|Controller|Scene|height|closed|scrollTop|left|400|hamburger'.split('|'),0,{}))
 
   AOS.init({
     offset: 10
