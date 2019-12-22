@@ -27,8 +27,18 @@ a {
     background-image: radial-gradient(circle at 100% 0, #261546, #0b021d);
 }
 
+.partners .header-text {
+    max-width: 715px;
+    margin: 9% auto 60px 15%;
+}
+
+.partners .header-title {
+    font-size: 50px;
+    letter-spacing: -3.75px;
+    max-width: 628px;
+}
 .partners .header-text p {
-    max-width: 688px;
+    max-width: 100%;
 }
 
 .partners .section-title {
@@ -42,46 +52,68 @@ a {
     font-size: 14px;
     font-weight: 300;
 }
-.s-partners .section-items {
-    padding: 120px 200px 50px;
+
+/* carousel */
+.b-carousel-home {
+    margin: 120px 0 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .s-partners {
-    padding: 90px 0 160px;
+    padding: 135px 50px 40px;
 }
 .partners-items {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px 40px;
-    padding: 0 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    padding: 170px 0 150px;
 }
 .partners-item {
-    height: 382px;
-    padding: 63px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.35);
+    height: 243px;
+    padding: 35px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+.partners-items a {
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.partners-items a:hover {
+    transform: scale(1.12);
+    z-index: 2;
 }
 .partners-item-logo {
-    min-height: 115px;
+    min-height: 72px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
 .partners-item-logo svg,
 .partners-item-logo img {
-    width: 100%;
     height: auto;
+    width: 113px;
 }
 .partners-item p {
   font-size: 10px;
-  line-height: 1.43;
+  line-height: 1.68;
+}
+.partners-item p:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 8px;
+}
+.coming-soon {
+    color: #cccccc;
 }
 
 .clients-items, .ecran-slide {
@@ -235,8 +267,11 @@ a {
 
 @media (max-width: 1280px) {
     .partners-item {
-        height: 300px;
-        padding: 3vw;
+        height: 230px;
+        padding: 2vw;
+    }
+    .partners-item-logo {
+        min-height: 65px;
     }
     .map-wrap {
         text-align: center;
@@ -252,6 +287,17 @@ a {
     .header-title {
         font-size: 26px;
     }  
+    .b-carousel-home {
+        margin: 91px 0 0;
+    }
+    .partners .header-title {
+        font-size: 26px;
+        letter-spacing: -2.03px;
+    }
+    .partners .header-text {
+        max-width: 100%;
+        margin: 75px auto 60px;
+    }
     .map-wrap {
         margin: 50px 0 30px;
     }
@@ -301,31 +347,42 @@ a {
     .s-contact {
         padding: 27px 25px 40px !important;
     }
-    
-}
-@media (max-width: 768px) {
     .partners-items {
-        display: block;
-        padding: 45px 25px 0;
+        padding: 20px 25px 35px;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 25px;
+    }
+    .partners-items-pesponsive {
+        overflow-x: auto;
     }
     .partners-item {
-        padding: 20px;
-        height: 150px;
-        max-width: 260px;
+        padding: 15px;
+        height: 212px;
+        width: 212px;
         margin: 0 auto 30px;
     }
     .partners-item p {
         font-size: 7px;
         line-height: 1.57;
     }
+    .coming-soon {
+        font-size: 14px;
+    }
     .partners-item-logo svg, .partners-item-logo img {
-        height: 100%;
         width: auto;
         max-width: 107px;
     }
     .s-partners {
-        padding: 75px 0 0px;
+        padding: 70px 25px 0;
     }
+    .partners-items a:hover {
+        transform: scale(1);
+    }
+    
+}
+@media (max-width: 768px) {
+    
     .logo-binary {
         height: auto !important;
     }
@@ -344,8 +401,8 @@ a {
         grid-gap: 40px 40px;
     }
     .partners-item-logo {
-        min-height: 20%;
-        height: 100%;
+        min-height: auto;
+        /* height: 100%; */
         margin-bottom: 20px;
     }
     .s-build .item-btn a {

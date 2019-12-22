@@ -1,0 +1,499 @@
+.body {
+    --button-line: #1d1035;
+}
+
+
+.contact {
+    background-color: #fff;
+    color: #1d1035;
+}
+
+.logo-text {
+    color: #1d1035;
+    font-weight: 700;
+}
+
+.elevate .scrolling-block {
+    display: none;
+}
+
+.section-title:before,
+.nmu-list ul a::before,
+.scrolling-right::before {
+    background-color: #1d1035;
+}
+
+
+a {
+    color: #231342;
+}
+
+.hamburger {
+    border: 1px solid #1d1035;
+}
+
+.s-contact {
+    margin-top: 40px;
+    padding: 95px 40px 40px;
+    background-image: radial-gradient(circle at 100% 0, #261546, #0b021d);
+}
+
+.contact .block-top {
+    min-height: auto;
+}
+
+.contact .section-all .section-title {
+    position: relative;
+}
+
+.contact .section-all .section-content {
+    max-width: 1115px;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+
+.contact-form {
+    position: relative;
+    width: 100%;
+    margin: 70px 0 120px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.success-info {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.75px;
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+    border: none;
+    color: #1d1035;
+    border-bottom: 2px solid;
+    width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(29, 16, 53, 0.5) !important;
+}
+
+.contact-form span,
+.custom-select .placeholder  {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.75px;
+    z-index: 1;
+    
+}
+.contact-form .form-placehold span,
+.custom-select .placeholder {
+    background-color: #fff;
+}
+.nice-select .current {
+    text-indent: 95px;
+    width: 91%;
+    overflow: hidden;
+}
+
+.block-half {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-half > div {
+    width: 45%;
+}
+
+.custom-select {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.form-placehold {
+    position: relative;
+}
+
+.form-placehold input {
+    text-indent: 120px;
+}
+
+.form-placehold .location {
+    text-indent: 160px;
+}
+
+.form-placehold textarea {
+    text-indent: 502px;
+}
+
+.form-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.line-hidden input,
+.line-hidden textarea,
+.line-hidden .nice-select {
+    border-bottom: 2px solid transparent;
+}
+
+.next-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-btn-wrap button,
+.next-form {
+    font-size: 20px;
+    width: 147px;
+    height: 47px;
+    border: solid 1px #1d1035;
+    background-color: #fff;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.form-btn-wrap button.hidden,
+.next-form.hidden,
+.block-success.hidden {
+    display: none;
+}
+
+.form-btn-wrap button:hover,
+.next-form:hover {
+    background-color: #1d1035;
+    color: #fff;
+}
+.success-info {
+    border: none;
+}
+.custom-select select {
+    width: 100%;
+}
+
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border: none;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 54px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+
+.nice-select:after {
+    border-bottom: 2px solid #1d1035;
+    border-right: 2px solid #1d1035;
+    content: '';
+    display: block;
+    height: 17px;
+    width: 17px;
+    margin-top: -15px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.remove-selected {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.custom-select.changed .remove-selected::before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 0;
+    border-bottom: 1px solid #1d1035;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.custom-select.changed .remove-selected::after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 11px;
+    border-right: 1px solid #1d1035;
+    top: 1px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.custom-select.changed .nice-select::after,
+.custom-select.changed .list {
+    display: none;
+}
+.custom-select.changed .nice-select {
+    pointer-events: none;
+}
+
+.nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+
+.nice-select.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none;
+}
+
+.nice-select.disabled:after {
+    border-color: #cccccc;
+}
+
+.nice-select.wide {
+    width: 100%;
+}
+
+.nice-select.wide .list {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.nice-select.right {
+    float: right;
+}
+
+.nice-select.right .list {
+    left: auto;
+    right: 0;
+}
+
+.nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px;
+}
+
+.nice-select.small:after {
+    height: 4px;
+    width: 4px;
+}
+
+.nice-select.small .option {
+    line-height: 34px;
+    min-height: 34px;
+}
+
+.nice-select .list {
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 8px;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-bottom: 2px solid #1d1035;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 2.5;
+    letter-spacing: -0.3px;
+    list-style: none;
+    font-size: 12px;
+    outline: none;
+    padding-left: 40px;
+    padding-right: 29px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+}
+.nice-select .option::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: #1d1035;
+    position: absolute;
+    top: 47%;
+    left: 0;
+}
+.nice-select .option:first-of-type {
+    display: none;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: rgba(21, 9, 45, 0.05);
+}
+
+.nice-select .option.selected {
+    font-weight: bold;
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+.block-step.hidden {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1440px) {
+    /* */
+}
+
+@media (max-width: 1280px) {
+    .s-contact {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .s-contact {
+        padding: 27px 25px 40px !important;
+        margin-top: 34px;
+    }
+    .block-half {
+        flex-direction: column;
+    }
+    .block-half > div {
+        width: 100%;
+    }
+    .contact-form input, .contact-form textarea,
+    .contact-form span, .custom-select .placeholder,
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder,
+    .success-info {
+        font-size: 18px;
+        letter-spacing: -0.45px;
+        top: 1px;
+    }
+    .form-placehold input {
+        text-indent: 74px;
+    }
+    .form-placehold .location {
+        text-indent: 94px;
+    }
+    .nice-select {
+        height: 49px;
+    }
+    .custom-select .placeholder {
+        top: 8px;
+    }
+    .nice-select .current {
+        text-indent: 61px;
+        width: 91%;
+    }
+    .form-btn-wrap button, .next-form {
+        font-size: 14px;
+        width: 88px;
+        height: 28px;
+        letter-spacing: -1px;
+    }
+    .nice-select:after {
+        height: 12px;
+        width: 12px;
+        right: 7px;
+        top: 57%;
+        border-bottom: 1px solid #1d1035;
+        border-right: 1px solid #1d1035;
+    }
+    .nice-select .option {
+        letter-spacing: -0.18px;
+        font-size: 10px;
+        padding-left: 30px;
+    }
+    .nice-select .list {
+        padding: 8px 0 8px;
+    }
+    .form-placehold textarea {
+        text-indent: 0;
+    }
+    .contact-form .step-3 span {
+        position: relative;
+    }
+    .contact-form {
+        margin: 70px 0 35px;
+    }
+    .contact-form input, .contact-form textarea, .success-info {
+        margin-bottom: 7px;
+    }
+    .remove-selected {
+        right: -5px;
+    }
+
+}
