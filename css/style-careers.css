@@ -77,6 +77,9 @@ a {
     -webkit-animation: none!important;
     animation: none!important;
 }
+.positions-head-title .mnu__line-in::before {
+    height: 4px;
+}
 .positions-body {
     width: 100%;
 }
@@ -84,6 +87,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    transition: all 0.4s;
 }
 .ps-content.hidden {
     display: none;
@@ -107,7 +111,7 @@ a {
 .positions-title {
     margin-bottom: 20px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.5px;
 }
 .positions-item p {
@@ -135,7 +139,6 @@ a {
     white-space: nowrap;
     margin: 15px 0 25px;
     letter-spacing: -0.5px;
-    text-transform: uppercase;
     transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .positions-link a:hover {

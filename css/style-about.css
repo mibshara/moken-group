@@ -54,7 +54,7 @@ a,
     padding: 0 30px 150px 200px;
 }
 .s-about .section-item {
-    max-width: 637px;
+    max-width: 600px;
     margin-right: 35px;
 }
 .s-about-sect .section-items {
@@ -142,6 +142,9 @@ a,
     }
     .s-contact {
         padding: 27px 25px 40px !important;
+    }
+    .about .section-item p span {
+        display: none;
     }
 }
 @media (max-width: 768px) {

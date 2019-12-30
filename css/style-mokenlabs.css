@@ -95,9 +95,12 @@ a {
 
 .program-slider-wrap {
     background-image: radial-gradient(circle at 100% -1%, #261546, #0b021d 99%);
-    padding: 65px 80px 65px 90px;
+    padding: 65px 0 65px;
     position: relative;
-    left: 80px;
+    left: 50px;
+}
+.program-slider-wrap ul {
+    padding: 0;
 }
 .program-slider-item {
     width: 464px;
@@ -105,17 +108,20 @@ a {
     padding: 55px 70px;
     margin: 10px;
 }
+.program-slider-item:last-of-type {
+    margin-right: 30px;
+}
 .program-number {
     font-size: 50px;
-    font-weight: 700;
-    letter-spacing: -3.75px;
+    font-weight: 600;
+    letter-spacing: -2px;
     margin: 40px 0 10px;
 }
 .program-slider-item-title {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.33;
-    letter-spacing: -2.25px;
+    letter-spacing: -2px;
 }
 .program-slider-item p {
     min-height: 325px;
@@ -126,10 +132,12 @@ a {
 }
 .program-title-block {
     border: none;
-    padding: 85px 0 0;
+    width: 550px;
+    padding: 85px 0 0 70px;
 }
 .program-title-block .section-title {
     position: relative;
+    font-weight: 600;
 }
 .program-title-block .section-title:before {
     background-color: #fff;
@@ -137,8 +145,8 @@ a {
 .program-title-block .program-title {
     font-size: 50px;
     line-height: 1.1;
-    letter-spacing: -3.75px;
-    font-weight: 700;
+    letter-spacing: -2.75px;
+    font-weight: 600;
     margin: 70px 0 0 100px;
 }
 .program-title-block .program-title span {
@@ -146,7 +154,7 @@ a {
     display: inline-block;
     font-size: 14px;
     line-height: 2.14;
-    letter-spacing: -0.35px;
+    letter-spacing: 0;
     margin-top: 45px;
 }
 
@@ -158,6 +166,20 @@ a {
     margin-top: -90px;
     z-index: 0;
     margin-bottom: 110px;
+}
+.s-transforming-ideas .section-title {
+    position: absolute;
+    top: 180px;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 183px;
+    padding-left: 166px;
+    z-index: 1;
+}
+.s-transforming-ideas .section-title:before {
+    height: 1px;
+    width: 51px;
+    top: 14px;
 }
 .transforming-ideas-content {
     background-color: #eeeceb;
@@ -273,7 +295,7 @@ a {
         margin-bottom: 40px;
     }
     .program-slider-wrap {
-        padding: 65px 80px 65px 90px;
+        padding: 65px 0 65px;
         left: 0;
         width: 106%;
     }
@@ -301,10 +323,17 @@ a {
     .transforming-ideas-title {
         max-width: 270px;
     }
+    .s-transforming-ideas .section-title {
+        position: relative;
+        font-size: 18px;
+        padding-left: 88px;
+        margin: 20px 0 40px;
+        line-height: 1.1;
+    }
 }
 @media (max-width: 767px) {
     .program-slider-wrap {
-        padding: 30px 20px;
+        padding: 30px 0;
     }
     .program-slider-item {
         width: 300px;
@@ -317,7 +346,7 @@ a {
         margin: 70px 0 0 0;
     }
     .program-number, .program-slider-item-title {
-        font-size: 18px;
+        font-size: 19px;
         letter-spacing: -1.35px;
         margin: 18px 0 10px;
     }
@@ -345,5 +374,8 @@ a {
     }
     .s-half-img:nth-of-type(2) .block-media {
         text-align: right;
+    }
+    .mokenlabs .s-interested a span::after, .mokenlabs .s-interested button span::after {
+        top: -2.5px;
     }
 }
