@@ -1718,7 +1718,7 @@ body.popup-open {
         margin-bottom: 89px;
     }
     .menu a {
-        width: 100%;
+        /* width: 100%; */
         font-size: 14px;
     }
     .mnu-social a {
@@ -1952,6 +1952,7 @@ body.popup-open {
         font-size: 20px;
         line-height: 1.25;
         margin-bottom: 35px;
+        letter-spacing: -1.25px;
     }
     .section-all .section-title {
         font-size: 18px;
