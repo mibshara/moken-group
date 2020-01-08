@@ -443,7 +443,7 @@ a {
     color: #110626;
     font-size: 63px;
     left: 20px;
-    top: -19px;
+    top: -14px;
     font-weight: 300;
     letter-spacing: -6.3px;
 }
@@ -481,6 +481,7 @@ a {
 @media (max-width: 991px) {
     .header-title {
         font-size: 26px;
+        letter-spacing: -2.03px;
     }
     .s-half-img img {
         width: 208px;
@@ -648,7 +649,7 @@ a {
         margin: 10px;
     }
     .program-title-block .program-title {
-        font-size: 30px;
+        font-size: 32px;
         letter-spacing: -2.75px;
         margin: 70px 0 0 0;
     }
@@ -657,11 +658,17 @@ a {
         letter-spacing: -1.35px;
         margin: 18px 0 10px;
     }
+    .program-number {
+        font-size: 30px;
+    }
     .program-slider-item p {
         height: 280px;
         overflow: auto;
-        font-size: 12px;
+        font-size: 10px;
         margin: 25px 0 0;
+    }
+    .program-slider-item .low-text {
+        font-size: 10px;
     }
     .program-title-block .program-title span {
         font-size: 12px;

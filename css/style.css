@@ -1175,7 +1175,7 @@ h6 {
     margin: 90px 0 35px;
     font-size: 14px;
     font-weight: 200;
-    line-height: 2;
+    line-height: 1.5;
 }
 .interested-info .block-button-grow {
     margin-top: 95px;
@@ -1225,6 +1225,7 @@ h6 {
 }
 .interested-info .title-general {
     color: #fff;
+    font-weight: 600;
 }
 
 .wait-list-form {
@@ -1236,11 +1237,9 @@ h6 {
     border: 1px solid #d5d5d5;
     background: transparent;
     font-size: 16px;
-    font-family: 'GothamBook', sans-serif;
     margin-bottom: 35px;
     font-weight: 200;
     width: 100%;
-    color: var(--black);
     padding: 22px 10px;
     transition: all 0.3s;
 }
@@ -1576,14 +1575,14 @@ body.popup-open {
     position: relative;
     height: auto;
     margin: 0 50px 0 100px;
-    border-bottom: 2px solid rgba(63, 60, 60, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     transition: all 1s ease;
 }
 .scroll-item.hovered {
     border-bottom: 2px solid #fff;
 }
 .scroll-item-subtitle {
-    font-size: 10px;
+    font-size: 15px;
     letter-spacing: -0.5px;
     color: #fff;
     font-weight: 600;
@@ -1836,8 +1835,7 @@ body.popup-open {
         padding-bottom: 60px;
     }
     .top-line-white .top-line {
-        background: transparent !important;
-        padding: 10px 25px;
+        padding: 0 25px;
     }
     .top-line-white .logo-text {
         color: #1d1035 !important;
@@ -1854,6 +1852,22 @@ body.popup-open {
     }
     .top-line-white .menu a {
         color: #231442;
+    }
+    .home .top-line-white .logo-text {
+        color: #fff !important;
+    }
+    .home .top-line-white .mnu__line-in::before {
+        background-color: #fff;
+    }
+    .home .top-line-white .hamburger {
+        border: 1px solid #fff;
+    }
+    .home .top-line-white .hamburger__line-in::before, 
+    .home .top-line-white .hamburger__line-in::after {
+        background-color: #fff;
+    }
+    .popup-active .top-line {
+        background: #fff !important;
     }
     .block-scroll {
         padding: 35px 0;
@@ -1985,7 +1999,7 @@ body.popup-open {
     }
     .capabilities-home-item {
         width: 200px;
-        padding: 20px;
+        padding: 30px 20px;
         height: auto;
         margin-bottom: 40px !important;
     }
@@ -2002,8 +2016,8 @@ body.popup-open {
     }
     .capabilities-home-item p {
         margin-bottom: 15px;
-        line-height: 1.3 !important;
-        font-size: 12px;
+        line-height: 1.44 !important;
+        font-size: 10px;
     }
     .capabilities-home-item:nth-of-type(3) {
         top: 0;
@@ -2012,7 +2026,7 @@ body.popup-open {
         margin-top: 15px;
     }
     .capabilities-home-content .item-btn a {
-        font-size: 12px !important;
+        font-size: 8px !important;
     }
     
     
@@ -2069,6 +2083,7 @@ body.popup-open {
     .interested-info .title-wrap span {
         font-size: 10px;
         margin-bottom: 30px;
+        letter-spacing: 0;
     }
     .interested-contact-wrap .title-wrap .line {
         width: 92px;
@@ -2081,12 +2096,16 @@ body.popup-open {
         padding: 0 30px;
     }
     .wait-list-form input {
-        font-size: 12px;
+        font-size: 8px;
         margin-bottom: 20px;
-        padding: 9px 8px;
+        padding: 10px 8px;
+        font-weight: 300;
     }
     .block-button-grow a, .block-button-grow button {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .s-interested .title-general {
+        letter-spacing: 0;
     }
     .s-interested a span, .s-interested button span {
         width: 29px;
@@ -2195,7 +2214,7 @@ body.popup-open {
         padding: 0;
     }
     .scroll-item-subtitle {
-        font-size: 6px;
+        font-size: 8px;
         letter-spacing: -0.3px;
     }
     .scroll-item-title {
