@@ -1866,8 +1866,19 @@ body.popup-open {
     .home .top-line-white .hamburger__line-in::after {
         background-color: #fff;
     }
+    
     .popup-active .top-line {
-        background: #fff !important;
+        background: transparent !important;
+    }
+    .popup-active .logo-text  {
+        color: #fff !important;
+    }
+    .popup-active .hamburger__line-in::before, .popup-active  .hamburger__line-in::after,
+    .popup-active .mnu__line-in::before {
+        background-color: #fff;
+    }
+    .popup-active .hamburger {
+        border: 1px solid #fff;
     }
     .block-scroll {
         padding: 35px 0;
