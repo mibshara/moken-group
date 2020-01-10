@@ -162,9 +162,8 @@ a {
 .article-descr p {
     font-size: 14px;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.5;
     margin-top: 40px;
-    letter-spacing: -0.21px;
 }
 
 .elevate .item-btn {
@@ -235,13 +234,14 @@ a {
 /* s-upcoming-events */
 .upcoming-events-cont {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 25px 65px;
+    padding: 25px 45px;
 }
 .upcoming-events-item {
     width: 22%;
     position: relative;
+    margin: 0 20px;
 }
 
 .s-upcoming-events .section-title {
@@ -278,6 +278,10 @@ a {
     font-weight: 700;
     line-height: 3;
     letter-spacing: -0.25px;
+    text-transform: uppercase;
+}
+.upcoming-events-info span {
+    margin-right: 15px;
 }
 .upcoming-events-info {
     display: flex;
@@ -288,6 +292,19 @@ a {
 }
 .upcoming-events-item .item-btn {
     margin: 10px 0 0;
+}
+.upcoming-no-events {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    text-align: center;
+    font-weight: 700;
+    padding: 80px 0;
+}
+
+.block-more-link a:nth-of-type(n + 2){
+    margin-left: 70px;
 }
 
 
@@ -330,6 +347,7 @@ a {
     }
     .upcoming-events-item {
         width: 203px;
+        margin: 0 20px 0 0;
         margin-top: 40px;
     }
     .upcoming-events-title {
@@ -425,6 +443,23 @@ a {
     .article-descr {
         max-width: 386px;
         margin: 0 0 0 40px !important;
+    }
+    .upcoming-no-events {
+        font-size: 14px;
+        text-align: left;
+        padding: 50px 20px;
+    }
+    .block-more-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .block-more-link a:nth-of-type(n + 2){
+        margin-left: 0;
+    }
+    .block-more-link a {
+        margin-bottom: 15px;
     }
 }
 
