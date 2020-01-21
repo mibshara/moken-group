@@ -122,7 +122,7 @@ a {
 }
 
 .form-placehold .location {
-    text-indent: 160px;
+    text-indent: 190px;
 }
 
 .form-placehold textarea {
@@ -446,7 +446,7 @@ a {
         text-indent: 74px;
     }
     .form-placehold .location {
-        text-indent: 94px;
+        text-indent: 113px;
     }
     .nice-select {
         height: 49px;
