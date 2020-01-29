@@ -306,6 +306,22 @@ a {
 .block-more-link a:nth-of-type(n + 2){
     margin-left: 70px;
 }
+.upcoming-events-item .item-btn a {
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: -0.25px;
+    width: 92px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #1d1035;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-events-item .item-btn a::after {
+    display: none;
+}
 
 
 
@@ -460,6 +476,12 @@ a {
     }
     .block-more-link a {
         margin-bottom: 15px;
+    }
+    .upcoming-events-item .item-btn a {
+        font-size: 9px;
+        display: flex !important;
+        width: 70px;
+        height: 25px;
     }
 }
 

@@ -1202,7 +1202,7 @@ h6 {
 .block-wrap-interested .title-wrap span {
     display: block;
     margin-left: 0;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.5;
     letter-spacing: -0.3px;
     margin-bottom: 60px;
@@ -1211,6 +1211,7 @@ h6 {
 .interested-info .title-wrap span {
     color: #fff;
     font-weight: 200;
+    font-size: 20px;
 }
 .interested-contact-wrap .title-wrap .line {
     width: 154px;

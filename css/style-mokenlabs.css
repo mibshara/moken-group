@@ -113,6 +113,29 @@ a {
     left: -323px;
     right: auto;
 }
+.partners-logo-program {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 8vw;
+    margin-top: 90px;
+}
+.partners-logo-program img {
+    width: 177px;
+    height: auto;
+    margin: 0 50px 0 0;
+    filter: grayscale(100%); 
+    opacity: 0.2;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.partners-logo-program img:first-of-type {
+    width: 150px;
+}
+.partners-logo-program img:hover {
+    filter: grayscale(0); 
+    opacity: 1;
+}
 
 
 /* s-program-benefits */
@@ -637,6 +660,13 @@ a {
     }
     .program-btn a:nth-of-type(2) {
         margin-left: 30px;
+    }
+    .partners-logo-program img {
+        margin: 0 50px 50px 0;
+    }
+    .partners-logo-program {
+        margin-top: 20px;
+        padding-left: 0;
     }
 }
 @media (max-width: 767px) {
