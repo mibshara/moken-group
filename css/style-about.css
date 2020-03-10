@@ -226,4 +226,17 @@ a,
         top: auto;
         margin-top: -18px;
     }
+    .about .item-title {
+        padding-left: 63px;
+        position: relative;
+    }
+    .about .item-title::before {
+        content: "";
+        position: absolute;
+        background-color: #1d1035;
+        width: 50px;
+        height: 1px;
+        top: 11px;
+        left: 0;
+    }
 }
