@@ -1804,7 +1804,6 @@ body.popup-open {
     }
     .scrolling-block p {
         font-size: 7px;
-        font-weight: 600;
     }
     .header-title {
         font-size: 27px;
@@ -1966,7 +1965,7 @@ body.popup-open {
     .foot-mnu-item-title {
         font-size: 11px;
         margin-bottom: 10px;
-        font-weight: 400;
+        font-weight: 600;
     }
     .foot-mnu-item ul a {
         font-size: 10px;
@@ -2146,7 +2145,7 @@ body.popup-open {
         border-left: 1px solid var(--sapphire);
         border-bottom: 1px solid transparent;
         border-right: 1px solid transparent;
-        top: -1.5px;
+        top: -2px;
     }
     .home .s-contact {
         margin-top: 87px;
@@ -2245,6 +2244,7 @@ body.popup-open {
         font-size: 36px;
         letter-spacing: -3px;
         margin: 20px 0 5px;
+        min-height: 68px;
     }
     .scroll-item-title span {
         font-size: 12px;

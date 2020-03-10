@@ -40,6 +40,7 @@ a,
 .about .item-btn a {
     font-weight: 700;
     pointer-events: auto;
+    padding-bottom: 5px;
 }
 .about .item-btn {
     margin-top: 30px;
@@ -146,6 +147,7 @@ a,
     .about .section-item p span {
         display: none;
     }
+    
 }
 @media (max-width: 768px) {
         
@@ -164,7 +166,10 @@ a,
         padding-left: 0;
     }
     .about .item-btn a {
-        display: block;
+        display: inline-block;
+    }
+    .about .section-all .item-btn a::after, .about .item-btn a::after {
+        bottom: 0px;
     }
     .about .s-contact {
         margin-top: 85px;

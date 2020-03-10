@@ -168,17 +168,10 @@ a {
 
 
 @media (max-width: 1440px) {
-    /* .сapabilities .block-top {
-        margin-bottom: 5%;
-    } */
 
     .сapabilities .s-contact {
         margin-top: 13%;
     }
-}
-
-@media (max-width: 1280px) {
-    /*  */
 }
 
 @media (max-width: 991px) {
@@ -193,10 +186,6 @@ a {
     .сapabilities .header-text {
         margin: 75px auto 60px;
     }
-
-    /* .сapabilities .scrolling-block {
-        display: flex;
-    } */
 
     .s-capabilities-sect .section-items {
         flex-direction: column-reverse !important;
@@ -253,6 +242,7 @@ a {
 
     .s-capabilities-sect .item-title {
         font-size: 18px;
+        font-weight: 700;
     }
 
     .capabilities-list li a {
