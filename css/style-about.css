@@ -531,6 +531,7 @@ section {
     align-items: center;
     color: #fff;
     cursor: pointer;
+    border: none;
 }
 .input-group input,
 .input-group button {
