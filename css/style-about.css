@@ -161,6 +161,9 @@ section {
     position: relative;
     padding: 10px;
 }
+.btn-slide-loop.vertical a {
+    padding: 40px;
+}
 
 .btn-slide-loop a span span {
     display: inline-block;
@@ -204,8 +207,8 @@ section {
     }
 }
 .btn-slide-loop.vertical {
-    bottom: 121px;
-    left: 195px;
+    bottom: 153px;
+    left: 170px;
 }
 .wrap-line-vertical {
     transform: rotate(90deg);
@@ -432,8 +435,14 @@ section {
     box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.12);
     transition: all 0.4s;
 }
+.three-boxes-item a {
+    animation-play-state: paused;
+}
 .three-boxes-item:hover {
     transform: scale(1.05);
+}
+.three-boxes-item:hover a span span::before {
+    animation-play-state: running;
 }
 .three-boxes-item-title {
     font-size: 20px;
@@ -530,8 +539,8 @@ section {
     justify-content: center;
     align-items: center;
     color: #fff;
-    cursor: pointer;
     border: none;
+    cursor: pointer;
 }
 .input-group input,
 .input-group button {

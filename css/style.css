@@ -330,13 +330,13 @@ h6 {
     transition: all 0.5s;
     background-color: #fff;
 }
+.home .top-line {
+    background-color: transparent;
+}
 .top-line-white .top-line {
     background: #fff;
     padding: 17px 50px 5px;
     top: 0;
-}
-.home .top-line {
-    background-color: transparent;
 }
 .home .top-line-white .top-line {
     background: linear-gradient(#261546, #0b021d) no-repeat;
