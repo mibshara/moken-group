@@ -159,10 +159,11 @@ section {
     font-weight: 700;
     font-size: 12px;
     position: relative;
-    padding: 10px;
+    padding: 40px 10px;
 }
 .btn-slide-loop.vertical a {
     padding: 40px;
+    padding: 40px 40px 160px;
 }
 
 .btn-slide-loop a span span {
@@ -192,7 +193,7 @@ section {
     animation: swing 2s infinite;
     animation-play-state: paused;
 }
-.btn-slide-loop a:hover span span::before {
+.btn-slide-loop:hover span span::before {
     animation-play-state: running;
 }
 @keyframes swing {
@@ -209,15 +210,19 @@ section {
 .btn-slide-loop.vertical {
     bottom: 153px;
     left: 170px;
+    padding: 0 ;
 }
 .wrap-line-vertical {
     transform: rotate(90deg);
     display: inline-block;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
 }
 .btn-slide-loop.vertical a .wrap-line-vertical span {
     width: 125px;
-    top: 85px;
-    right: -83px;
+    top: -3px;
+    right: 0;
     animation: slideDownUp 2s ease-in-out infinite;
     animation-play-state: paused;
 }
@@ -387,11 +392,9 @@ section {
     max-width: 613px;
 }
 .s-community .btn-slide-loop a {
-    padding: 10px 10px 10px 0;
+    padding: 40px 0;
 }
-.s-community .btn-slide-loop {
-    margin: 40px 0;
-}
+
 .s-brands-line {
     padding: 0;
 }
@@ -461,7 +464,9 @@ section {
 .three-boxes-wrap > div:last-child .three-boxes-item .btn-slide-loop a span span::before {
     border-color: #fc745f;
 }
-
+.s-three-boxes .btn-slide-loop a {
+    padding: 10px;
+}
 /* s-launchpad */
 .s-launchpad .section-item {
     padding-left: 116px;
@@ -476,11 +481,12 @@ section {
     max-width: 339px;
 }
 .s-launchpad .section-item .btn-slide-loop {
-    margin: 80px 0 0 35px;
+    margin: 55px 0 0 35px;
 }
 .s-launchpad .btn-slide-loop a span span::before {
     border-color: #ffb727;
 }
+
 
 /* s-subscribe */
 .s-subscribe {
@@ -742,13 +748,14 @@ section {
         padding-left: 0;
     }
     .s-community .btn-slide-loop {
-        margin: 10px 0 30px;
+        margin: -15px 0;
     }
     .three-boxes-item p {
         line-height: 1.42;
     }
     .s-launchpad .section-item .btn-slide-loop {
-        margin: 35px 0 36px 35px;
+        margin: 15px 0 16px 35px;
+        padding: 0;
     }
     .launchpad-content {
         margin-right: 0;
